@@ -19,5 +19,5 @@ jobs:
     - name: Build the Docker image
       run: docker build -t bent_melis/alm-workshop:latest . --progress=plain
     - name: Push the Docker image
-      run:  docker image push  quay.io/bent_melis/alm-workshop:latest
+      run:  docker image push bent_melis/alm-workshop:latest quay.io/bent_melis/alm-workshop
 
