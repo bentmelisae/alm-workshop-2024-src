@@ -17,7 +17,7 @@ jobs:
     - name: Login with robot
       run: docker login -u="bent_melis+bent_melis" -p="9VQQTGJXVLVA51NLMHK80STQFRR5P0TT6SHR9KS0GZSFPNHQAG3051ZDN6BX7FIY" quay.io
     - name: Build the Docker image
-      run: docker build -t bent_melis/alm-workshop:latest . --progress=plain
+      run: docker build . -t bent_melis/alm-workshop
     - name: Push the Docker image
-      run:  docker image push bent_melis/alm-workshop:latest quay.io/bent_melis/alm-workshop
+      run:  docker image push bent_melis/alm-workshop
 
